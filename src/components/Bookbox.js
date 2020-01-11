@@ -4,9 +4,21 @@ import Logo2 from './mahabharat.jpg'
 import Logo3 from './geeta.png'
 import Logo4 from './srimad-bhagwat.jpg'
 import './Bookbox.css'
-import Dashboard from './Dashboard'
+import Modal from './Modal'
 export class Bookbox extends Component {
-    numlist = ['1','2','3','4']
+    constructor(props) {
+        super(props)
+        this.state = {
+            show: false
+        }
+    }
+    showModal = (event) => {
+        this.setState({ show: true });
+      };
+    
+      hideModal = () => {
+        this.setState({ show: false });
+      };
     render() {
         const books = [
             {
@@ -32,13 +44,12 @@ export class Bookbox extends Component {
             },
         ]
         return (
-            <div className="container">
-                <div className="row">
+                 <div className="row book">
                     {
                         books.map((book) => {
                             return (
-                            <div className="col-2"><img className="book" title={book.name} alt={book.name} src={book.logo}></img>
-                             <div class="container card-content">
+                            <div key = {book.id} className="col-2" onClick={this.showModal}><img className="book" title={book.name} alt={book.name} src={book.logo}></img>
+                             <div className="container card-content">
                             <h4><b>{book.name}</b></h4>
                             <p>Original Sanskrit copy</p>
                             </div>
@@ -46,8 +57,7 @@ export class Bookbox extends Component {
                             )
                         })
                     }
-                </div>
-                <Dashboard />
+                     <Modal show={this.state.show} handleClose={this.hideModal}/>
             </div>
             
         )

@@ -6,6 +6,82 @@
     height: auto;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%); */
+    padding-bottom: 20px;
+    left: 46px;
+    top: 0px;
+    border-radius: 7px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    animation: mymove 0.3s;
   }
-  
+  .modal-main img.close {
+    float: right;
+    width: 2%;
+    height: 2%;
+    background-color: white;
+    margin: 5px 5px 0 0;
+  }
+  .modal-main img.modalimg {
+        width: 200px;
+        height: 300px;
+        margin: 15px 0 0 15px;
+        border-radius: 7px;
+        padding-bottom: 10px;
+
+  }
+  @keyframes mymove {
+    from {transform: scale(0.8);}
+    to {transform: scale(1);}
+  }
+.text {
+  position: fixed;
+  top: 22px;
+  left: 300px;
+}
+.text h1 {
+  margin: 0px;
+}
+.text p {
+  width: 40rem;
+  font-size: 0.85rem;
+}
+.text p a {
+    text-decoration: none;
+}
+.text p a:hover{
+   text-decoration: underline;
+}
+.row.ab {
+  margin-left: 20px;
+  width: 13rem;
+}
+.downloadbutton, .sharebutton {
+  width: 25px;
+  height: 25px;
+  padding: 0 20px 0 20px;
+}
+.modal-main img.likebutton {
+  width: 25px;
+  height: 25px;
+  padding: 0 20px 0 20px;
+}
+.modal-main img.downloadbutton:active, .sharebutton:active, .likebutton:active{
+   animation: buttonanim 0.3s;
+}
+
+@keyframes buttonanim {
+  from {transform: scale(0.8);}
+  to {transform: scale(1.2);}
+}
+.lang a{
+text-decoration: none;
+font-size: 0.8rem;
+padding: 0 5px 0 5px;
+}
+.lang a:hover {
+  text-decoration: underline;
+}
+.lang {
+  position: fixed;
+  left: 400px;
+}
