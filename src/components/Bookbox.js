@@ -12,8 +12,8 @@ export class Bookbox extends Component {
             show: false
         }
     }
-    showModal = (event) => {
-        this.setState({ show: true });
+    showModal = (event, book) => {
+        this.setState({ show: true, selectedBook: book });
       };
     
       hideModal = () => {
@@ -48,7 +48,7 @@ export class Bookbox extends Component {
                     {
                         books.map((book) => {
                             return (
-                                <div key = {book.id} className="col-2 book-item" onClick={this.showModal}>
+                                <div key = {book.id} className="col-2 book-item" onClick={(e) => this.showModal(e, book)}>
                                     <img className="book" title={book.name} alt={book.name} src={book.logo}></img>
                                     <div className="container card-content">
                                         <p className="book-title">{book.name}</p>
@@ -57,7 +57,7 @@ export class Bookbox extends Component {
                             )
                         })
                     }
-                     <Modal show={this.state.show} handleClose={this.hideModal}/>
+                     <Modal show={this.state.show} selectedBook={this.state.selectedBook} handleClose={this.hideModal}/>
             </div>
             
         )
