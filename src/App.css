@@ -1,6 +1,11 @@
 body {
-background-image: url('gan.jpg');
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+    background-image: url('gan.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.app-container {
+    padding: 55px;
 }

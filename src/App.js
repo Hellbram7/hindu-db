@@ -4,7 +4,7 @@ import Bodybox from './components/Bodybox'
 export class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app-container">
         <Bodybox />
       </div>
     )
