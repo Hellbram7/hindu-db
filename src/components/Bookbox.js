@@ -48,12 +48,12 @@ export class Bookbox extends Component {
                     {
                         books.map((book) => {
                             return (
-                            <div key = {book.id} className="col-2" onClick={this.showModal}><img className="book" title={book.name} alt={book.name} src={book.logo}></img>
-                             <div className="container card-content">
-                            <h4><b>{book.name}</b></h4>
-                            <p>Original Sanskrit copy</p>
-                            </div>
-                            </div>
+                                <div key = {book.id} className="col-2 book-item" onClick={this.showModal}>
+                                    <img className="book" title={book.name} alt={book.name} src={book.logo}></img>
+                                    <div className="container card-content">
+                                        <p className="book-title">{book.name}</p>
+                                    </div>
+                                </div>
                             )
                         })
                     }
