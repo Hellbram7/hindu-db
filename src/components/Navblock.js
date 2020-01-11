@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './Navblock.css'
 export class Navblock extends Component {
     render() {
+        console.log(this.props.item)
         const items = [
             {
                 id: '0',
@@ -23,6 +24,7 @@ export class Navblock extends Component {
         ]
         return (
             <>
+             <input type="text" placeholder="Search..." className="container inbox"></input>
                 {
                         items.map((items) => {
                             return (

@@ -1,8 +1,4 @@
 import React, { Component } from 'react'
-import Logo1 from './ramayan.jpg'
-import Logo2 from './mahabharat.jpg'
-import Logo3 from './geeta.png'
-import Logo4 from './srimad-bhagwat.jpg'
 import './Modal.css'
 import './Bookbox.css'
 export class Modal extends Component {
@@ -20,7 +16,6 @@ changedownloadStyle = (event) => {
   this.setState({downloadbuttonlogo: 'download.svg'})
 }
   render() {
-    console.log(this.props.selectedBook)
     return (
       <div style={this.props.show ? {display: 'block'} : {display: 'none'}}>
       {this.props.selectedBook && (

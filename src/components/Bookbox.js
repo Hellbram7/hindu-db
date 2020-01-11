@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './Bookbox.css'
+import Modal from './Modal'
 import Logo1 from './ramayan.jpg'
 import Logo2 from './mahabharat.jpg'
 import Logo3 from './geeta.png'
@@ -13,8 +15,6 @@ import Logo11 from './yajurveda.jpg'
 import Logo12 from './atharvveda.jpg'
 import Logo13 from './matasyapurana.jpg'
 import Logo14 from './agnipurana.jpg'
-import './Bookbox.css'
-import Modal from './Modal'
 export class Bookbox extends Component {
     constructor(props) {
         super(props)
