@@ -14,13 +14,31 @@
     box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
     animation: mymove 0.3s;
   }
-  .modal-main img.close {
+
+  .close img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .close {
+    border: none;
+    align-items: center;  
     float: right;
-    width: 2%;
-    height: 2%;
-    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    padding:5px;
+    cursor: pointer;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    background-color: rgba(218,165,32, 0.5);
     margin: 5px 5px 0 0;
   }
+
+  .book-details {
+    width: 350px;
+    font-size: 14px;
+  }
+
   .modal-main img.modalimg {
         width: 200px;
         height: 300px;
@@ -40,10 +58,6 @@
 }
 .text h1 {
   margin: 0px;
-}
-.text p {
-  width: 40rem;
-  font-size: 0.85rem;
 }
 .text p a {
     text-decoration: none;

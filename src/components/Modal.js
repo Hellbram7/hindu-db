@@ -33,11 +33,13 @@ export class Modal extends Component {
     return (
       <div style={this.props.show ? {display: 'block'} : {display: 'none'}}>
       <div className="modal-main">
-      <img className="close" src='./cross-out.svg' alt="close" onClick={this.props.handleClose}></img>
+        <button className="close">
+          <img src='./cross-out.svg' alt="close" onClick={this.props.handleClose}></img>
+        </button>
         <img src={books[0].logo} alt={books[0].name} className="modalimg"></img>
         <div className="text">
           <h1>{books[0].name}</h1>
-          <p>The epic, traditionally ascribed to the Maharshi Valmiki, narrates the life of Ram, the legendary prince of the Koshal Kingdom. It follows his fourteen-year exile to the forest by his father King Dasharatha, on request of his step-mother Kaikeyi. His travels across forests in India with his wife Seeta and brother Lakshman, the kidnapping of his wife by Ravana, the great king of Lanka, resulting in a war with him, and Ram's eventual return to Ayodhya to be crowned king is the crux of the epic.......<a href={'https://en.wikipedia.org/wiki/Ramayana'}>Wikipedia</a></p>
+          <p className="book-details">The epic, traditionally ascribed to the Maharshi Valmiki, narrates the life of Ram, the legendary prince of the Koshal Kingdom. It follows his fourteen-year exile to the forest by his father King Dasharatha, on request of his step-mother Kaikeyi. His travels across forests in India with his wife Seeta and brother Lakshman, the kidnapping of his wife by Ravana, the great king of Lanka, resulting in a war with him, and Ram's eventual return to Ayodhya to be crowned king is the crux of the epic.......<a href={'https://en.wikipedia.org/wiki/Ramayana'}>Wikipedia</a></p>
           </div>
         <div className="row ab">
           <img className="col-3 likebutton" src='./heart.svg' alt="Like"></img>
