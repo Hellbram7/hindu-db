@@ -8,6 +8,7 @@ export class Bodybox extends Component {
             <div className="container">
                 <div className="col-3 navblock">
                     <div className="boxposition">
+                        <input type="text" placeholder="Search..." className="container inbox"></input>
                     <Navblock />
                     </div>
                 </div>
