@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './Navblock.css'
 export class Navblock extends Component {
     render() {
-        console.log(this.props.item)
         const items = [
             {
                 id: '0',

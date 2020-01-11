@@ -12,7 +12,7 @@ export class Bodybox extends Component {
                     </div>
                 </div>
                 <div className="col-9">
-                    <Bookbox />
+                    <Bookbox books={this.props.books}/>
                 </div> 
             </div>
         )
