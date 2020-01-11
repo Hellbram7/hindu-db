@@ -7,7 +7,9 @@ export class Bodybox extends Component {
         return (
             <div className="container">
                 <div className="col-3 navblock">
+                    <div className="boxposition">
                     <Navblock />
+                    </div>
                 </div>
                 <div className="col-9">
                     <Bookbox />

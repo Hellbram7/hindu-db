@@ -1,11 +1,9 @@
 
   .modal-main {
-    position:fixed;
+    position: fixed;
     background: white;
     width: 80%;
     height: auto;
-    top:50%;
-    left:50%;
     /* transform: translate(-50%,-50%); */
     padding-bottom: 20px;
     left: 46px;
@@ -72,16 +70,17 @@
 .downloadbutton, .sharebutton {
   width: 25px;
   height: 25px;
-  padding: 0 20px 0 20px;
+  margin: 0 20px 0 20px;
 }
 .modal-main img.likebutton {
   width: 25px;
   height: 25px;
-  padding: 0 20px 0 20px;
+  margin: 0 20px 0 20px;
 }
 .modal-main img.downloadbutton:active, .sharebutton:active, .likebutton:active{
-   animation: buttonanim 0.3s;
+   animation: buttonanim 0.5s;
 }
+
 
 @keyframes buttonanim {
   from {transform: scale(0.8);}
