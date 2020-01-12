@@ -18,6 +18,7 @@ export class Bookbox extends Component {
     render() {
        
         return (
+            <>
                  <div className="row book">
                     {
                         this.props.books.map((book) => {
@@ -31,9 +32,9 @@ export class Bookbox extends Component {
                             )
                         })
                     }
-                     <Modal show={this.state.show} selectedBook={this.state.selectedBook} handleClose={this.hideModal}/>
-            </div>
-            
+                </div>
+                <Modal show={this.state.show} selectedBook={this.state.selectedBook} handleClose={this.hideModal}/>
+            </>
         )
     }
 }

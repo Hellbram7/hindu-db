@@ -19,9 +19,6 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
-.boxposition {
-    position: fixed;
-}
 .container.inbox {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

@@ -2,12 +2,12 @@
   .modal-main {
     position: fixed;
     background: white;
-    width: 80%;
+    width: 650px;
     height: auto;
     /* transform: translate(-50%,-50%); */
     padding-bottom: 20px;
-    left: 46px;
-    top: 0px;
+    left: 30%;
+    top: 20%;
     border-radius: 7px;
     box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
     animation: mymove 0.3s;
@@ -19,6 +19,8 @@
     cursor: pointer;
   }
   .close {
+    position: absolute;
+    right: 0;
     border: none;
     align-items: center;  
     float: right;
@@ -49,10 +51,19 @@
     from {transform: scale(0.8);}
     to {transform: scale(1);}
   }
+
+  .model-content {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .book-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+  }
 .text {
-  position: fixed;
-  top: 22px;
-  left: 300px;
 }
 .text h1 {
   margin: 0px;
@@ -62,10 +73,6 @@
 }
 .text p a:hover{
    text-decoration: underline;
-}
-.row.ab {
-  margin-left: 20px;
-  width: 13rem;
 }
 .downloadbutton, .sharebutton {
   width: 25px;
@@ -95,6 +102,4 @@ padding: 0 5px 0 5px;
   text-decoration: underline;
 }
 .lang {
-  position: fixed;
-  left: 400px;
 }
