@@ -12,7 +12,7 @@ export class Modal extends Component {
 }
 
 changelikeStyle = (event) => {
-  if (this.state.likebuttonlogo == './heart.svg') {
+  if (this.state.likebuttonlogo === './heart.svg') {
     this.setState({likebuttonlogo: './heart-red.svg', x: this.state.x + 1})
   }
   else {

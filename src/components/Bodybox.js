@@ -15,7 +15,7 @@ export class Bodybox extends Component {
               event.target.value.toLowerCase()) !== -1;
           })})
     }
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
         this.setState({items: this.state.initialItems})
       }
     render() {
