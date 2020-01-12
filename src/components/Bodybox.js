@@ -10,7 +10,7 @@ export class Bodybox extends Component {
        }
     }
     updatedList = (event) => {
-        this.setState({initialItems: this.state.initialItems.filter(function(item){
+        this.setState({items: this.state.initialItems.filter(function(item){
             return item.name.toLowerCase().search(
               event.target.value.toLowerCase()) !== -1;
           })})
