@@ -11,8 +11,7 @@ export class Bodybox extends Component {
     }
     updatedList = (event) => {
         this.setState({initialItems: this.state.initialItems.filter(function(item){
-            console.log(item);
-            return item.toLowerCase().search(
+            return item.name.toLowerCase().search(
               event.target.value.toLowerCase()) !== -1;
           })})
     }
