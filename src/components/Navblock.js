@@ -23,7 +23,6 @@ export class Navblock extends Component {
         ]
         return (
             <>
-             <input type="text" placeholder="Search..." className="container inbox"></input>
                 {
                         items.map((items) => {
                             return (

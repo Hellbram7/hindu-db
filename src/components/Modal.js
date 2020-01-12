@@ -7,10 +7,16 @@ export class Modal extends Component {
     this.state = {
         likebuttonlogo: './heart.svg',
         downloadbuttonlogo: './down-arrow.svg'
+      
     }
 }
 changelikeStyle = (event) => {
-  this.setState({likebuttonlogo: './heart-red.svg'})
+  if (this.state.likebuttonlogo == './heart.svg') {
+    this.setState({likebuttonlogo: './heart-red.svg'})
+  }
+  else {
+    this.setState({likebuttonlogo: './heart.svg'})
+  }
 }
 changedownloadStyle = (event) => {
   this.setState({downloadbuttonlogo: 'download.svg'})
