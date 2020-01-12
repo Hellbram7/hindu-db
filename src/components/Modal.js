@@ -8,7 +8,6 @@ export class Modal extends Component {
         likebuttonlogo: './heart.svg',
         downloadbuttonlogo: './down-arrow.svg',
         x: 0
-      
     }
 }
 
@@ -34,7 +33,6 @@ changedownloadStyle = (event) => {
   this.setState({downloadbuttonlogo: 'download.svg'})
 }
   render() {
-    console.log(this.likeCalculator())
     return (
       <>
       {this.props.selectedBook && (
