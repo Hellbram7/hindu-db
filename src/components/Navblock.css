@@ -31,3 +31,6 @@
 .container.inbox:hover {
     transform: scale(1.07);
 }
+.boxposition {
+    position: fixed;
+}

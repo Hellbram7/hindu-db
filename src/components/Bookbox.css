@@ -66,9 +66,9 @@ width: 19%;
 
 .row.book {
     transform: translate(7%);
-    transform: translate(7%);
+    /* transform: translate(7%);
     height: 600px;
-    overflow: hidden scroll;
+    overflow: hidden scroll; */
 }
 
 /* .col-2 img.book { transition: all .1s ease-in-out; }

@@ -22,7 +22,7 @@ export class Bodybox extends Component {
         return (
             <div className="container">
                 <div className="col-3 navblock">
-                    <div>
+                    <div className="boxposition">
                     <input type="text" placeholder="Search..." className="container inbox" onChange={(e) => this.updatedList(e)}></input>
                     <Navblock />
                     </div>
