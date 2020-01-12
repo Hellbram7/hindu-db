@@ -83,7 +83,7 @@
 .modal-main img.likebutton {
   width: 25px;
   height: 25px;
-  margin: 0 20px 0 20px;
+  margin: 0 15px 0 20px;
 }
 .modal-main img.downloadbutton:active, .sharebutton:active, .likebutton:active{
    animation: buttonanim 0.5s;
