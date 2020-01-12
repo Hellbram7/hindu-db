@@ -1,0 +1,36 @@
+.col-3.navblock {
+    width: 20%;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgba(218,165,32, 0.6);
+}
+.container.catagory {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ff9933;
+    margin-bottom: 15px;
+    transition: all .3s ease-out;
+    width: 95%;
+}
+.container.catagory:hover {
+    color: white;
+    background-color: #ff9933;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.container.inbox {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ff9933;
+    margin-bottom: 15px;
+    transition: all .3s ease-out;
+    width: 91%;
+    border-radius: 5px;
+}
+.container.inbox:hover {
+    transform: scale(1.07);
+}
+.boxposition {
+    position: fixed;
+}

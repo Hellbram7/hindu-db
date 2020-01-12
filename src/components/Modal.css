@@ -1,11 +1,114 @@
 
   .modal-main {
-    position:fixed;
+    position: fixed;
     background: white;
-    width: 80%;
+    width: 700px;
     height: auto;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%); */
+    padding-bottom: 40px;
+    left: 30%;
+    top: 20%;
+    border-radius: 7px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    animation: mymove 0.3s;
   }
-  
+
+  .close img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .close {
+    position: absolute;
+    right: 0;
+    border: none;
+    align-items: center;  
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    padding:5px;
+    cursor: pointer;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    background-color: rgba(218,165,32, 0.5);
+    margin: 5px 5px 0 0;
+  }
+
+  .book-details {
+    width: 350px;
+    font-size: 14px;
+  }
+
+  .modal-main img.modalimg {
+        width: 200px;
+        height: 300px;
+        margin: 15px 0 0 15px;
+        border-radius: 7px;
+        margin-bottom: 5px;
+
+  }
+  @keyframes mymove {
+    from {transform: scale(0.8);}
+    to {transform: scale(1);}
+  }
+
+  .model-content {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .book-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+  }
+.text {
+  margin-left: 20px;
+}
+.text h1 {
+  margin: 0px;
+}
+.text p a {
+    text-decoration: none;
+}
+.text p a:hover{
+   text-decoration: underline;
+}
+.downloadbutton, .sharebutton {
+  width: 25px;
+  height: 25px;
+  margin: 0 20px 0 20px;
+}
+.modal-main img.likebutton {
+  width: 25px;
+  height: 25px;
+  margin: 0 20px 0 20px;
+}
+.modal-main img.downloadbutton:active, .sharebutton:active, .likebutton:active{
+   animation: buttonanim 0.5s;
+}
+
+
+@keyframes buttonanim {
+  from {transform: scale(0.8);}
+  to {transform: scale(1.2);}
+}
+.lang a{
+text-decoration: none;
+font-size: 0.8rem;
+padding: 0 5px 0 5px;
+}
+.lang a:hover {
+  text-decoration: underline;
+}
+.lang {
+  position: relative;
+  left: 100px;
+}
+.row.ab {
+    position: relative;
+    top: 50px;
+    padding-bottom: 10px;
+    left: -230px;
+}
