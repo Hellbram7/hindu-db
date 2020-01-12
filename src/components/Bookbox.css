@@ -70,6 +70,9 @@ width: 19%;
     height: 600px;
     overflow: hidden scroll; */
 }
+.row.book.change {
+    filter: blur(3px);
+}
 
 /* .col-2 img.book { transition: all .1s ease-in-out; }
 .col-2 img.book:hover { transform: scale(1.1); } */

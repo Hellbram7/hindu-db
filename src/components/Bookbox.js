@@ -7,6 +7,7 @@ export class Bookbox extends Component {
         this.state = {
             show: false
         }
+        this.cls = ''
     }
     showModal = (event, book) => {
         this.setState({ show: true, selectedBook: book });
@@ -15,11 +16,22 @@ export class Bookbox extends Component {
       hideModal = () => {
         this.setState({ show: false });
       };
+
+      changeClass = () => {
+          if (this.state.show == true) {
+              this.cls = "row book change"
+          }
+          else {
+              this.cls = "row book"
+          }
+          return this.cls
+      }
+      
     render() {
        
         return (
             <>
-                 <div className="row book">
+                 <div className={this.changeClass()}>
                     {
                         this.props.books.map((book) => {
                             return (
