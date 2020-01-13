@@ -71,7 +71,7 @@ width: 19%;
     overflow: hidden scroll; */
 }
 .row.book.change {
-    filter: blur(3px);
+    filter: blur(2px);
 }
 
 /* .col-2 img.book { transition: all .1s ease-in-out; }

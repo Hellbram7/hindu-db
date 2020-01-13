@@ -108,9 +108,29 @@ export class App extends Component {
             discription: ""
         },
     ]
+
+    const items = [
+        {
+            id: '0',
+            name: 'Vedas'
+            
+        },
+        {
+            id: '1',
+            name: 'Puranas'
+        },
+        {
+            id: '2',
+            name: 'Mahakavyas'
+        },
+        {
+            id: '3',
+            name: 'Test Object'
+        },
+    ]
     return (
       <div className="app-container">
-        <Bodybox books ={books}/>
+        <Bodybox books ={books} items={items}/>
       </div>
     )
   }

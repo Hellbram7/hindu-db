@@ -49,7 +49,7 @@
 
   }
   @keyframes mymove {
-    from {transform: scale(0.8);}
+    from {transform: scale(0.7);}
     to {transform: scale(1);}
   }
 
