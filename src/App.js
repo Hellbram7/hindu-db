@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './App.css'
-import Bodybox from './components/Bodybox'
 import Logo1 from './ramayan.jpg'
 import Logo2 from './mahabharat.jpg'
 import Logo3 from './geeta.png'
@@ -15,6 +14,7 @@ import Logo11 from './yajurveda.jpg'
 import Logo12 from './atharvveda.jpg'
 import Logo13 from './matasyapurana.jpg'
 import Logo14 from './agnipurana.jpg'
+import Navblock from './components/Navblock'
 export class App extends Component {
   render() {
     const books = [
@@ -130,7 +130,7 @@ export class App extends Component {
     ]
     return (
       <div className="app-container">
-        <Bodybox books ={books} items={items}/>
+        <Navblock items={items} books={books}/>
       </div>
     )
   }

@@ -18,7 +18,7 @@ export class Bookbox extends Component {
       };
 
       changeClass = () => {
-          if (this.state.show == true) {
+          if (this.state.show === true) {
               this.cls = "row book change"
           }
           else {
@@ -33,7 +33,7 @@ export class Bookbox extends Component {
             <>
                  <div className={this.changeClass()}>
                     {
-                        this.props.books.map((book) => {
+                        this.props.bookitems.map((book) => {
                             return (
                                 <div key = {book.id} className="col-2 book-item" onClick={(e) => this.showModal(e, book)}>
                                     <img className="book" title={book.name} alt={book.name} src={book.logo}></img>
